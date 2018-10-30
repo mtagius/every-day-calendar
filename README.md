@@ -1,4 +1,4 @@
-# every-day-calender
+# every-day-calendar
 
 This project is a quick stab at making a web version of [Simone Giertz's Every Day Calendar](https://www.kickstarter.com/projects/simonegiertz/the-every-day-calendar).  Simone's Calendar is a calendar that motivates you to complete a daily task by showing you all of the previous days you have completed that task.
 
