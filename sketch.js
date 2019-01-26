@@ -62,6 +62,12 @@ function draw() {
   for(var i = 0; i < calender.length; i++) {
     for(var j = 0; j < calender[i].length; j++) {
 
+      if(i == 0) {
+        textSize(spacing * .5);
+        textAlign(CENTER);
+        text(j + 1, (j * spacing) + xOffset, (i * spacing) + yOffset - (spacing * .85));
+      }
+
       if(calender[i][j] == 1) {
         ellipse((j * spacing) + xOffset, (i * spacing) + yOffset, Math.round(spacing * .75), Math.round(spacing * .75));
       } else {
@@ -78,6 +84,7 @@ function draw() {
       }
     }
     textSize(spacing - 5);
+    textAlign(LEFT);
     text(months[i], xOffset - Math.round(spacing * 2.5), (i * spacing) + yOffset + (Math.round(spacing / 5)));
   }
 }
